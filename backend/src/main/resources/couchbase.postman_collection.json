@@ -1,7 +1,7 @@
 {
 	"info": {
 		"_postman_id": "d94e0b99-1a10-4209-b1a3-c866cd13300c",
-		"name": "kotlin couchbase",
+		"name": "couchbase",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "7821151",
 		"_collection_link": "https://lively-comet-8198.postman.co/workspace/An%C4%B1l~d33d46fc-ebc0-4ccb-81ba-caceff009d2d/collection/7821151-d94e0b99-1a10-4209-b1a3-c866cd13300c?action=share&source=collection_link&creator=7821151"

@@ -16,6 +16,14 @@ public class LoginRequest extends BaseDto {
     @Schema(description = "Password of the user", name = "password", type = "String", example = "password", requiredMode = Schema.RequiredMode.REQUIRED)
     private String password;
 
+    public LoginRequest() {
+    }
+
+    public LoginRequest(String email, String password) {
+        this.email = email;
+        this.password = password;
+    }
+
     public @NotBlank @Size(min = 3, max = 30) String getEmail() {
         return email;
     }

@@ -7,8 +7,6 @@ git clone https://github.com/senocak/Spring-Kotlin-Couchbase.git
 ## Technology Stack
 - Backend
   - Jvm, 17.0.10
-  - Kotlin, 1.9.23
-  - Gradle, 8.7
   - SpringBoot, 3.3.1
     - Spring Data Couchbase
   - Couchbase, 7.6.1
@@ -27,9 +25,9 @@ git clone https://github.com/senocak/Spring-Kotlin-Couchbase.git
 ### Running Backend Side
 ```sh 
 cd backend
-./gradlew clean build -Pprofile=unit #runs only unit tests and build the package
-./gradlew clean build -Pprofile=integration #runs only integration tests and build the package
-./gradlew bootRun # runs the SpringBoot application via commandline
+./mvnw clean install -DskipITs=true #runs only unit tests and build the package
+./mvnw clean install -DskipITs=false #runs only integration tests and build the package
+./mvnw spring-boot:run # runs the SpringBoot application via commandline
 ```
 ### Running Frontend Side
 

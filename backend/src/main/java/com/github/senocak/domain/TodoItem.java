@@ -13,6 +13,15 @@ public class TodoItem extends BaseDomain implements Serializable {
     @Field private UUID owner;
     @Field private Boolean finished;
 
+    public TodoItem() {
+    }
+
+    public TodoItem(String description, UUID owner, Boolean finished) {
+        this.description = description;
+        this.owner = owner;
+        this.finished = finished;
+    }
+
     public String getDescription() {
         return description;
     }

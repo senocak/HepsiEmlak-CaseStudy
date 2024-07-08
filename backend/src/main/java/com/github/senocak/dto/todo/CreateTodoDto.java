@@ -9,6 +9,13 @@ public class CreateTodoDto extends BaseDto {
     @Size(min = 5, max = 250)
     private String description;
 
+    public CreateTodoDto() {
+    }
+
+    public CreateTodoDto(String description) {
+        this.description = description;
+    }
+
     public @Size(min = 5, max = 250) String getDescription() {
         return description;
     }

@@ -12,6 +12,14 @@ public class UpdateTodoDto extends BaseDto {
     @Schema(example = "false", description = "Is finished?", requiredMode = Schema.RequiredMode.REQUIRED, name = "name", type = "Boolean")
     private Boolean finished;
 
+    public UpdateTodoDto() {
+    }
+
+    public UpdateTodoDto(String description, Boolean finished) {
+        this.description = description;
+        this.finished = finished;
+    }
+
     public @Size(min = 5, max = 250) String getDescription() {
         return description;
     }
